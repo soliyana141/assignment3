@@ -1,0 +1,15 @@
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\bin\Debug\net6.0\assimnt3.exe
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\bin\Debug\net6.0\assimnt3.deps.json
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\bin\Debug\net6.0\assimnt3.runtimeconfig.json
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\bin\Debug\net6.0\assimnt3.dll
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\bin\Debug\net6.0\assimnt3.pdb
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\assimnt3.csproj.AssemblyReference.cache
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\assimnt3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\assimnt3.AssemblyInfoInputs.cache
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\assimnt3.AssemblyInfo.cs
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\assimnt3.csproj.CoreCompileInputs.cache
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\assimnt3.dll
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\refint\assimnt3.dll
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\assimnt3.pdb
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\assimnt3.genruntimeconfig.cache
+C:\Users\Soliyana\Documents\GitHub\assi3\assimnt3\assimnt3\obj\Debug\net6.0\ref\assimnt3.dll
