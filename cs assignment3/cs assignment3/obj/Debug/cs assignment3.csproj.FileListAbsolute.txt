@@ -1,0 +1,11 @@
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\bin\Debug\cs assignment3.exe.config
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\bin\Debug\cs assignment3.exe
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\bin\Debug\cs assignment3.pdb
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs assignment3.csproj.AssemblyReference.cache
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs assignment3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.Form1.resources
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.Properties.Resources.resources
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs assignment3.csproj.GenerateResource.cache
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs assignment3.csproj.CoreCompileInputs.cache
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs assignment3.exe
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs assignment3.pdb

@@ -52,31 +52,31 @@ namespace Shape_Assignment
             static void Main(String[] args)
             {
                 circle circle1 = new circle();
-                WriteLine("plesae enter radius: >>");
+                WriteLine("plesae enter radius: ");
                 circle1.radius = int.Parse(ReadLine());
                 WriteLine("Area of the circle is : ");
                 WriteLine(circle1.calc_area());
                 circle circle2 = new circle();
-                WriteLine("Please enter radius: >>");
+                WriteLine("Please enter radius: ");
                 circle2.radius = int.Parse(ReadLine());
-                WriteLine("The circumference of the circle is: >>");
+                WriteLine("The circumference of the circle is: ");
                 WriteLine(circle1.calc_perimeter());
 
 
                 rectangle rectangle1 = new rectangle();
-                WriteLine("Please enter length: >>");
+                WriteLine("Please enter length: ");
                 rectangle1.length = int.Parse(ReadLine());
-                WriteLine("Please enter width : >>");
+                WriteLine("Please enter width : ");
                 rectangle1.width = int.Parse(ReadLine());
-                WriteLine("The perimeter of the rectangle is: >>");
+                WriteLine("The perimeter of the rectangle is: ");
                 WriteLine(rectangle1.calc_perimeter());
 
                 rectangle rectangle2 = new rectangle();
-                WriteLine("Please enter length: >>");
+                WriteLine("Please enter length: ");
                 rectangle2.length = int.Parse(ReadLine());
-                WriteLine("Please enter width: >>");
+                WriteLine("Please enter width: ");
                 rectangle2.width = int.Parse(ReadLine());
-                WriteLine("The area of rectangle is : >>");
+                WriteLine("The area of rectangle is : ");
                 WriteLine(rectangle2.calc_area());
 
             }
