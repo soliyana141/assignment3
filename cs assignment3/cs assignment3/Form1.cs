@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace cs_assignment3
 {
@@ -18,18 +19,66 @@ namespace cs_assignment3
             InitializeComponent();
         }
 
-  private void btnadd_Click(object sender, EventArgs e)
+
+        private void btnadd_Click(object sender, EventArgs e)
         {
-            Class1 c = new Class1
+            ERP.Clear();
+            Regex r = new Regex(@"^([^0-9]*)$");
+            if (string.IsNullOrEmpty(tbnum.Text))
             {
-                Number = int.Parse(tbnum.Text),
-                Date = dateTimePicker1.Text,
-                InvNum = int.Parse(tbinvnum.Text),
-                ObjName = tbobjname.Text,
-                Count = int.Parse(tbcount.Text),
-                Price = double.Parse(tbprice.Text)
-            };
-            c.save();
+                ERP.SetError(tbnum, "Number required");
+            }
+            else if (string.IsNullOrEmpty(tbinvnum.Text))
+            {
+                ERP.SetError(tbinvnum, "invetory Number required");
+            }
+            else if (string.IsNullOrEmpty(tbobjname.Text))
+            {
+                ERP.SetError(tbobjname, "Name required");
+            }
+            else if (string.IsNullOrEmpty(tbcount.Text))
+            {
+                ERP.SetError(tbcount, "Count required");
+            }
+            else if (string.IsNullOrEmpty(tbprice.Text))
+            {
+                ERP.SetError(tbprice, "Price required");
+            }
+            else if (!r.IsMatch(tbobjname.Text))
+            {
+                ERP.SetError(tbobjname, "Incorrect syntax");
+            }
+            else
+            {
+                ERP.Clear();
+                try
+                {
+                    Class1 c = new Class1
+                    {
+                        Number = int.Parse(tbnum.Text),
+                        Date = dateTimePicker1.Text,
+                        InvNum = int.Parse(tbinvnum.Text),
+                        ObjName = tbobjname.Text,
+                        Count = int.Parse(tbcount.Text),
+                        Price = double.Parse(tbprice.Text)
+                    };
+                    c.save();
+                    db.DataSource = null;
+                    db.DataSource = Class1.getallclass1();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("empty");
+                };
+            }
+        }
+            private void btnCancel_Click(object sender, EventArgs e)
+            {
+                System.Environment.Exit(0);
+            }
         }
     }
-}
+
+
+        
+        

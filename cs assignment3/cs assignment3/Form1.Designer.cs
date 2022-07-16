@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,6 +43,10 @@
             this.btnadd = new System.Windows.Forms.Button();
             this.btncancel = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.db = new System.Windows.Forms.DataGridView();
+            this.ERP = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.db)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ERP)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +70,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(530, 35);
+            this.label3.Location = new System.Drawing.Point(599, 24);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 20);
             this.label3.TabIndex = 2;
@@ -80,7 +85,7 @@
             // 
             // tbinvnum
             // 
-            this.tbinvnum.Location = new System.Drawing.Point(461, 60);
+            this.tbinvnum.Location = new System.Drawing.Point(534, 62);
             this.tbinvnum.Name = "tbinvnum";
             this.tbinvnum.Size = new System.Drawing.Size(308, 26);
             this.tbinvnum.TabIndex = 5;
@@ -154,16 +159,31 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(232, 60);
+            this.dateTimePicker1.Location = new System.Drawing.Point(239, 60);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(271, 26);
             this.dateTimePicker1.TabIndex = 14;
+            // 
+            // db
+            // 
+            this.db.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.db.Location = new System.Drawing.Point(3, 389);
+            this.db.Name = "db";
+            this.db.RowHeadersWidth = 62;
+            this.db.RowTemplate.Height = 28;
+            this.db.Size = new System.Drawing.Size(880, 216);
+            this.db.TabIndex = 15;
+            // 
+            // ERP
+            // 
+            this.ERP.ContainerControl = this;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(884, 609);
+            this.Controls.Add(this.db);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btncancel);
             this.Controls.Add(this.btnadd);
@@ -180,6 +200,8 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.db)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ERP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -201,6 +223,8 @@
         private System.Windows.Forms.Button btnadd;
         private System.Windows.Forms.Button btncancel;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DataGridView db;
+        private System.Windows.Forms.ErrorProvider ERP;
     }
 }
 

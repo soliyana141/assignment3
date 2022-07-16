@@ -9,6 +9,7 @@ namespace cs_assignment3.model
 {
     class Class1
     {
+        static private List<Class1> p = new List<Class1>();
         public int Number { get; set; }
 
         public string Date { get; set; }
@@ -23,7 +24,16 @@ namespace cs_assignment3.model
 
         public void save()
         {
-            MessageBox.Show("Successful");
+            p.Add(this);
+        }
+        public static List<Class1> getallclass1()
+        {
+            return p;
         }
     }
 }
+
+            
+        
+    
+
