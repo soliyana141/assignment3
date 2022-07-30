@@ -21,6 +21,11 @@ namespace cs_assignment3.model
         public int Count { get; set; }
 
         public double Price { get; set; }
+        public bool isavailable { get; set; }
+
+        public bool simple { get; set; }
+        public bool variable  { get; set; }
+
 
         public void save()
         {

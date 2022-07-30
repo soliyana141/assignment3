@@ -45,23 +45,33 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.db = new System.Windows.Forms.DataGridView();
             this.ERP = new System.Windows.Forms.ErrorProvider(this.components);
+            this.available = new System.Windows.Forms.CheckBox();
+            this.checkbox = new System.Windows.Forms.CheckedListBox();
+            this.simple = new System.Windows.Forms.RadioButton();
+            this.variable = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.db)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERP)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 24);
+            this.label1.Location = new System.Drawing.Point(27, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Number";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(267, 24);
+            this.label2.Location = new System.Drawing.Point(267, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 20);
             this.label2.TabIndex = 1;
@@ -70,22 +80,23 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(599, 24);
+            this.label3.Location = new System.Drawing.Point(598, 37);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Inventory number";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // tbnum
             // 
-            this.tbnum.Location = new System.Drawing.Point(12, 60);
+            this.tbnum.Location = new System.Drawing.Point(12, 71);
             this.tbnum.Name = "tbnum";
             this.tbnum.Size = new System.Drawing.Size(197, 26);
             this.tbnum.TabIndex = 3;
             // 
             // tbinvnum
             // 
-            this.tbinvnum.Location = new System.Drawing.Point(534, 62);
+            this.tbinvnum.Location = new System.Drawing.Point(532, 71);
             this.tbinvnum.Name = "tbinvnum";
             this.tbinvnum.Size = new System.Drawing.Size(308, 26);
             this.tbinvnum.TabIndex = 5;
@@ -140,7 +151,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(71, 330);
+            this.btnadd.Location = new System.Drawing.Point(124, 471);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(75, 31);
             this.btnadd.TabIndex = 12;
@@ -150,7 +161,7 @@
             // 
             // btncancel
             // 
-            this.btncancel.Location = new System.Drawing.Point(403, 330);
+            this.btncancel.Location = new System.Drawing.Point(364, 471);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(75, 31);
             this.btncancel.TabIndex = 13;
@@ -159,7 +170,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(239, 60);
+            this.dateTimePicker1.Location = new System.Drawing.Point(235, 71);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(271, 26);
             this.dateTimePicker1.TabIndex = 14;
@@ -167,7 +178,7 @@
             // db
             // 
             this.db.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.db.Location = new System.Drawing.Point(3, 389);
+            this.db.Location = new System.Drawing.Point(-8, 551);
             this.db.Name = "db";
             this.db.RowHeadersWidth = 62;
             this.db.RowTemplate.Height = 28;
@@ -178,11 +189,103 @@
             // 
             this.ERP.ContainerControl = this;
             // 
+            // available
+            // 
+            this.available.AutoSize = true;
+            this.available.Location = new System.Drawing.Point(517, 342);
+            this.available.Name = "available";
+            this.available.Size = new System.Drawing.Size(100, 24);
+            this.available.TabIndex = 16;
+            this.available.Text = "complete";
+            this.available.UseVisualStyleBackColor = true;
+            this.available.CheckedChanged += new System.EventHandler(this.available_CheckedChanged);
+            // 
+            // checkbox
+            // 
+            this.checkbox.FormattingEnabled = true;
+            this.checkbox.Items.AddRange(new object[] {
+            "Large",
+            "Medium",
+            "Small"});
+            this.checkbox.Location = new System.Drawing.Point(29, 342);
+            this.checkbox.Name = "checkbox";
+            this.checkbox.Size = new System.Drawing.Size(137, 96);
+            this.checkbox.TabIndex = 17;
+            this.checkbox.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
+            // 
+            // simple
+            // 
+            this.simple.AutoSize = true;
+            this.simple.Location = new System.Drawing.Point(11, 25);
+            this.simple.Name = "simple";
+            this.simple.Size = new System.Drawing.Size(58, 24);
+            this.simple.TabIndex = 18;
+            this.simple.TabStop = true;
+            this.simple.Text = "yes";
+            this.simple.UseVisualStyleBackColor = true;
+            // 
+            // variable
+            // 
+            this.variable.AutoSize = true;
+            this.variable.Location = new System.Drawing.Point(11, 55);
+            this.variable.Name = "variable";
+            this.variable.Size = new System.Drawing.Size(52, 24);
+            this.variable.TabIndex = 19;
+            this.variable.TabStop = true;
+            this.variable.Text = "no";
+            this.variable.UseVisualStyleBackColor = true;
+            this.variable.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.simple);
+            this.groupBox1.Controls.Add(this.variable);
+            this.groupBox1.Location = new System.Drawing.Point(271, 338);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 20;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "availability";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(8, 4);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 20);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "label3";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(277, 396);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(0, 20);
+            this.label8.TabIndex = 22;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(40, 319);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 20);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "size";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 609);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.checkbox);
+            this.Controls.Add(this.available);
             this.Controls.Add(this.db);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btncancel);
@@ -202,6 +305,8 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.db)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERP)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,6 +330,14 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DataGridView db;
         private System.Windows.Forms.ErrorProvider ERP;
+        private System.Windows.Forms.CheckBox available;
+        private System.Windows.Forms.CheckedListBox checkbox;
+        private System.Windows.Forms.RadioButton variable;
+        private System.Windows.Forms.RadioButton simple;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }
 
