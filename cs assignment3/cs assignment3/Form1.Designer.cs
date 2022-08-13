@@ -50,7 +50,6 @@
             this.simple = new System.Windows.Forms.RadioButton();
             this.variable = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.db)).BeginInit();
@@ -66,7 +65,6 @@
             this.label1.Size = new System.Drawing.Size(65, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Number";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -85,7 +83,6 @@
             this.label3.Size = new System.Drawing.Size(132, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Inventory number";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // tbnum
             // 
@@ -151,7 +148,7 @@
             // 
             // btnadd
             // 
-            this.btnadd.Location = new System.Drawing.Point(124, 471);
+            this.btnadd.Location = new System.Drawing.Point(161, 469);
             this.btnadd.Name = "btnadd";
             this.btnadd.Size = new System.Drawing.Size(75, 31);
             this.btnadd.TabIndex = 12;
@@ -161,7 +158,7 @@
             // 
             // btncancel
             // 
-            this.btncancel.Location = new System.Drawing.Point(364, 471);
+            this.btncancel.Location = new System.Drawing.Point(401, 469);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(75, 31);
             this.btncancel.TabIndex = 13;
@@ -178,7 +175,7 @@
             // db
             // 
             this.db.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.db.Location = new System.Drawing.Point(-8, 551);
+            this.db.Location = new System.Drawing.Point(29, 549);
             this.db.Name = "db";
             this.db.RowHeadersWidth = 62;
             this.db.RowTemplate.Height = 28;
@@ -198,7 +195,6 @@
             this.available.TabIndex = 16;
             this.available.Text = "complete";
             this.available.UseVisualStyleBackColor = true;
-            this.available.CheckedChanged += new System.EventHandler(this.available_CheckedChanged);
             // 
             // checkbox
             // 
@@ -211,7 +207,6 @@
             this.checkbox.Name = "checkbox";
             this.checkbox.Size = new System.Drawing.Size(137, 96);
             this.checkbox.TabIndex = 17;
-            this.checkbox.SelectedIndexChanged += new System.EventHandler(this.checkbox_SelectedIndexChanged);
             // 
             // simple
             // 
@@ -234,7 +229,6 @@
             this.variable.TabStop = true;
             this.variable.Text = "no";
             this.variable.UseVisualStyleBackColor = true;
-            this.variable.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -246,16 +240,6 @@
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "availability";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 4);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 20);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "label3";
             // 
             // label8
             // 
@@ -273,16 +257,15 @@
             this.label9.Size = new System.Drawing.Size(37, 20);
             this.label9.TabIndex = 23;
             this.label9.Text = "size";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 609);
+            this.ClientSize = new System.Drawing.Size(929, 821);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.checkbox);
             this.Controls.Add(this.available);
@@ -301,7 +284,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.db)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ERP)).EndInit();
@@ -335,7 +320,6 @@
         private System.Windows.Forms.RadioButton variable;
         private System.Windows.Forms.RadioButton simple;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
     }

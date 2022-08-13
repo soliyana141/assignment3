@@ -35,6 +35,10 @@ namespace cs_assignment3.model
         {
             return p;
         }
+        public static Class1 findOne(string name)
+        {
+            return p.Find(p => p.ObjName == name);
+        }
     }
 }
 

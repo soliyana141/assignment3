@@ -10,3 +10,9 @@ C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug
 C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs assignment3.exe
 C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs assignment3.pdb
 C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.login.resources
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.Form2.resources
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.search.resources
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.new_form.resources
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.product_card.resources
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.Form3.resources
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.Display.resources

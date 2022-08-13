@@ -14,10 +14,10 @@ namespace cs_assignment3
 {
     public partial class Form1 : Form
     {
-        public Form1(string text)
+        public Form1()
         {
             InitializeComponent();
-            label7.Text = text;
+            //label7.Text = text;
         }
 
 
@@ -81,53 +81,15 @@ namespace cs_assignment3
 
                 }
                 MessageBox.Show(checkItems);
-
-
-
-
             }
         }
             private void btnCancel_Click(object sender, EventArgs e)
             {
                 System.Environment.Exit(0);
             }
-
-        private void available_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkbox_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
-    }
+}
 
 
         

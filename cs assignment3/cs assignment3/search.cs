@@ -1,4 +1,5 @@
-﻿using System;
+﻿using cs_assignment3.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,33 +11,24 @@ using System.Windows.Forms;
 
 namespace cs_assignment3
 {
-    public partial class login : Form
+    public partial class search : Form
     {
-        public login()
+        public search()
         {
             InitializeComponent();
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = email.Text;
-            if (email.Text.Equals("admin") && password.Text.Equals("admin"))
+            var pro = Class1.findOne(tbsearch.Text);
+            if (pro == null)
             {
-            Form2 screen = new Form2(); 
-            screen.Show();
-            this.Hide();
+                MessageBox.Show("Not found");
             }
             else
             {
-                MessageBox.Show("incorrect");
+                MessageBox.Show("Found");
             }
-           
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
