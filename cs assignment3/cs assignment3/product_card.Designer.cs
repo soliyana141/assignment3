@@ -40,11 +40,12 @@
             // 
             this.lblNum.AutoSize = true;
             this.lblNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum.Location = new System.Drawing.Point(23, 19);
+            this.lblNum.Location = new System.Drawing.Point(23, 22);
             this.lblNum.Name = "lblNum";
             this.lblNum.Size = new System.Drawing.Size(100, 29);
             this.lblNum.TabIndex = 0;
             this.lblNum.Text = "Number";
+            this.lblNum.Click += new System.EventHandler(this.lblNum_Click);
             // 
             // LblDate
             // 
@@ -108,6 +109,7 @@
             this.Controls.Add(this.lblNum);
             this.Name = "product_card";
             this.Size = new System.Drawing.Size(465, 165);
+            this.Load += new System.EventHandler(this.product_card_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

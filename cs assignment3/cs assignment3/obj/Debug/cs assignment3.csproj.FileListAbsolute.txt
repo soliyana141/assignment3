@@ -16,3 +16,4 @@ C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug
 C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.product_card.resources
 C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.Form3.resources
 C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.Display.resources
+C:\Users\Soliyana\Documents\GitHub\assi3\cs assignment3\cs assignment3\obj\Debug\cs_assignment3.DetailPage.resources

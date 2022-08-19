@@ -87,7 +87,11 @@ namespace cs_assignment3
             {
                 System.Environment.Exit(0);
             }
-        
+
+        private void checkbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

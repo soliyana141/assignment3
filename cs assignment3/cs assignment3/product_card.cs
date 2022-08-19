@@ -60,6 +60,15 @@ namespace cs_assignment3
             InitializeComponent();
         }
 
+        private void lblNum_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void product_card_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

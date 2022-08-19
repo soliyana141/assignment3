@@ -20,7 +20,7 @@ namespace cs_assignment3
 
         private void Display_Load(object sender, EventArgs e)
         {
-            foreach(var item in Class1.getallclass1())
+            foreach (var item in Class1.getallclass1())
             {
                 product_card p = new product_card();
                 p.MyNum = item.Number;
@@ -29,8 +29,19 @@ namespace cs_assignment3
                 p.MyObjName = item.ObjName;
                 p.MyCount = item.Count;
                 p.MyPrice = item.Price;
-                flowLayoutPanel1.Controls.Add(p);
+                p.Click += (object o, EventArgs ee) =>
+                {
+                    DetailPage d = new DetailPage(item.Number, item.Date, item.ObjName, item.Count, item.InvNum, item.Price);
+                    d.Show();
+                };
+              
+           
+              flowLayoutPanel1.Controls.Add(p);
             }
         }
     }
 }
+//if anonymes name we use 
+ // p.click +=(object o,eventargs e)=>
+ // messagebox.show(item name)
+ //floatlayoutpanal1.control.add(p)
