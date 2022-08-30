@@ -17,7 +17,8 @@ namespace cs_assignment3
         public Form1()
         {
             InitializeComponent();
-            //label7.Text = text;
+            db.DataSource = null;
+            db.DataSource = Class1.getallclass1();
         }
 
 
@@ -61,7 +62,7 @@ namespace cs_assignment3
                         InvNum = int.Parse(tbinvnum.Text),
                         ObjName = tbobjname.Text,
                         Count = int.Parse(tbcount.Text),
-                        Price = double.Parse(tbprice.Text),
+                        Price = int.Parse(tbprice.Text),
                         isavailable=available.Checked,
                         simple=simple.Checked,
                         variable=variable.Checked

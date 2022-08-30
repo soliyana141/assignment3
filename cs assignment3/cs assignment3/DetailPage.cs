@@ -12,7 +12,7 @@ namespace cs_assignment3
 {
     public partial class DetailPage : Form
     {
-        public DetailPage(int num,string d, string obj, int c, int inv, double p)
+        public DetailPage(int num,string d, string obj, int c, int inv, int p)
         {
             InitializeComponent();
             label1.Text = "Num: " + num.ToString();
